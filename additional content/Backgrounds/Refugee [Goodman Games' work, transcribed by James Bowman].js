@@ -7,7 +7,7 @@
 */
 
 /*	-INFORMATION-
-	Subject:	Race
+	Subject:	Background
 	Effect:		This script adds a background, called "Refugee"
 				This is taken from DriveThruRPG (https://www.drivethrurpg.com/product/132657/)
 				This subrace is made by Goodman Games
@@ -29,7 +29,7 @@ SourceList["FEF1:G"] = {
 };
 
 BackgroundList["refugee"] = {
-		regExpSearch : /refugee/i,
+		regExpSearch : /refugee\b/i,
 		name : "Refugee",
 		source : ["FEF1:G", 14],
 		skills : ["Athletics", "Survival"],
@@ -90,7 +90,6 @@ BackgroundList["refugee"] = {
 			"I hoard every resource I can, be it money, magic, or food, for fear I might find myself lacking when I most need these things.",
 			"I have no respect for those who lead a life of luxury and leisure, untested by the hardships of life."
 		],
-		variant: [],
 		tools: ["Artisan's tools", "Vehicles (land)"],
 		lifestyle : "poor"
 };
